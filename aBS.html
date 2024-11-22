@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Trim-Gym | Services</title>				
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		<style>
+
+
+.animenu__toggle {
+  display: none;
+  cursor: pointer;
+  background-color: ;
+  border: 0;
+  padding: 20px;
+  height: 40px;
+  width: px;
+
+  }
+.animenu__toggle:hover {
+  background-color: #0186ba;
+}
+
+.animenu__toggle__bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: ;
+  transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+}
+.animenu__toggle__bar + .animenu__toggle__bar {
+  margin-top: 4px;
+}
+
+.animenu__toggle--active .animenu__toggle__bar {
+  margin: 0;
+  position: absolute;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.animenu {
+  display: block;
+
+}
+.animenu ul {
+  padding: 0;
+  list-style: none;
+  font: 0px 'Open Sans', Arial, Helvetica;
+  margin-left:400px;
+  margin-top:2px;
+  }
+.animenu li, .animenu a {
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.animenu a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.animenu__nav {
+  background-color:;
+}
+.animenu__nav > li {
+  position: relative;
+  border-right: 1px solid ;
+}
+.animenu__nav > li > a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.animenu__nav > li > a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-bottom: 0;
+  border-top-color: currentColor;
+  top: 50%;
+  margin-top: -2px;
+  right: 10px;
+}
+.animenu__nav > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+.animenu__nav > li:hover > a {
+  color: #fff;
+}
+
+.animenu__nav__child {
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 20px 0 0 0;
+  background-color: #373737;
+  transition: margin .15s, opacity .15s;
+}
+.animenu__nav__child > li {
+  width: 100%;
+  border-bottom: 1px solid #515151;
+}
+.animenu__nav__child > li:first-child > a:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: inherit;
+}
+.animenu__nav__child > li:last-child {
+  border: 0;
+}
+.animenu__nav__child a {
+  padding: 10px;
+  width: 100%;
+  border-color: #373737;
+}
+.animenu__nav__child a:hover {
+  background-color: #0186ba;
+  border-color: #0186ba;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .animenu__toggle {
+    display: inline-block;
+  }
+
+  .animenu__nav,
+  .animenu__nav__child {
+    display: none;
+  }
+
+  .animenu__nav {
+    margin: 20px 0;
+  }
+  .animenu__nav > li {
+    width: ;
+    border-right: 0;
+    border-bottom: 1px solid #515151;
+  }
+  .animenu__nav > li:last-child {
+    border: 0;
+  }
+  .animenu__nav > li:first-child > a:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 1em;
+    top: -6px;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: inherit;
+  }
+  .animenu__nav > li > a {
+    width: 100%;
+    padding: 10px;
+    border-color: #111;
+    position: relative;
+  }
+  .animenu__nav a:hover {
+    background-color: #0186ba;
+    border-color: #0186ba;
+    color: #fff;
+  }
+
+  .animenu__nav__child {
+    position: static;
+    background-color: #373737;
+    margin: 0;
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .animenu__nav__child > li:first-child > a:after {
+    content: none;
+  }
+  .animenu__nav__child a {
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+.animenu__nav--open {
+  display: block !important;
+}
+.animenu__nav--open .animenu__nav__child {
+  display: block;
+}
+.log1{
+color:black;
+}
+.ablog
+{
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+	}
+	.about1{
+	background-color:white;
+
+    height: 80px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	.parallax1{
+	background-image:url("images/bg1.jpg");
+
+    height:auto; 
+	width:auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+		.body {
+    background-image:url("images/.jpg");
+
+    height:auto; 
+	width:100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	line-height: 24px;
+    font-size: 16px;
+    color: #818181;
+}
+
+</style>
+
+    </head>
+	
+    <body class="about">
+
+	
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header parallax1">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					
+						<div class=" wow animated bounceInRight"><img src="images/logo.jpg" class="img-responsive" style="height:59px; width:250px;  "></div>
+                    
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="animenu"> 
+  <button class="animenu__toggle">
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+  </button>
+  <ul class="animenu__nav">
+    <li>
+     <a href="index.html">Home</a>
+    </li>
+	<li>
+      <a href="about-us.html">About</a>
+    </li>
+    <li class="active">
+      <a href="#service">Service</a>
+      <ul class="animenu__nav__child">
+        <li><a href="aerobics.html">Aerobics</a></li>
+        <li><a href="muscle.html">Muscle</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+		<li><a href="aBS.html">Abdominal Exercise</a></li>
+        <li><a href="cardio.html"> Cardio </a></li>
+        <li><a href="Kung fu.html">Kung Fu</a></li>
+        <li><a href="Martial Arts .html">Martial Arts</a></li>
+
+	  </ul>
+    </li>     
+    <li>
+      <a href="pricing.html#pricing">Pricing</a>
+    </li>
+    <li>
+      <a href="gallery.html#gallery">Gallery</a>
+    </li>
+    <li>
+      <a href="Contact-Us.html">Contact</a>
+    </li>                 
+  </ul>
+</nav>
+    <!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<!-- Service section -->
+		<section>
+			<div class="container">
+				<div class="row ">
+				
+				
+					<div class="col-sm-12 col-sm-12 col-sm-12 ">
+
+							</div>
+							<h3 class=" wow animated bounceInRight"><b>ABS</b></h3>
+							<p class="wow animated fadeInDown ">Sit-ups and crunches aren't the only options when it comes to building core strength. In fact, there are plenty of exercises that activate more of your abdominal muscles than crunches alone. Whether you have a medicine ball or just a mat, want to target your lower abs or perfect your plank, the moves below will help shake up your routine..</p><br/>
+								<h3 class=" wow animated bounceInRight"><b>How do you use an ABS machine?</b></h3><br/>
+							<p class="wow animated fadeInDown">Select a light resistance and sit down on the ab machine placing your feet under the pads provided and grabbing the top handles. ...
+At the same time, begin to lift the legs up as you crunch your upper torso. ...
+After a second pause, slowly return to the starting position as you breathe in.</p><br/>
+					<h3 class=" wow animated bounceInRight"><b>Aerobics Exercise Image</b></h3>
+					<img src="Services/ab.png" class="img-responsive" style="height:250px;">
+					<hr>
+					
+					
+					</div>
+								
+							</div>							
+							
+				
+		</section>
+		<!-- end Service section -->
+		
+		
+		
+		<!-- Social section -->
+		<section id="social" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>FOLLOW US</h2>
+							<p>Beautifully simple follow buttons to help you get followers on</p>
+						</div>
+						
+						<ul class="social-button">
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+						</ul>
+						<div class="text-center">
+						<br/>
+						<br/>
+            <p>Copyright &copy; 2021 Design and Developed By <a href="#">Abdullah Usmani</a> </p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Social section -->
+		
+		
+		</main>
+		
+		
+
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

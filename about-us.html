@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+ <html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Trim-Gym | About-Us</title>				
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		<style>
+
+
+.animenu__toggle {
+  display: none;
+  cursor: pointer;
+  background-color: ;
+  border: 0;
+  padding: 20px;
+  height: 40px;
+  width: px;
+
+  }
+.animenu__toggle:hover {
+  background-color: #0186ba;
+}
+
+.animenu__toggle__bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: ;
+  transition: 0.15s cubic-bezier(0.75, -0.55, 0.25, 1.55);
+}
+.animenu__toggle__bar + .animenu__toggle__bar {
+  margin-top: 4px;
+}
+
+.animenu__toggle--active .animenu__toggle__bar {
+  margin: 0;
+  position: absolute;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+.animenu__toggle--active .animenu__toggle__bar:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.animenu {
+  display: block;
+
+}
+.animenu ul {
+  padding: 0;
+  list-style: none;
+  font: 0px 'Open Sans', Arial, Helvetica;
+  margin-left:400px;
+  margin-top:2px;
+  }
+.animenu li, .animenu a {
+  display: inline-block;
+  font-size: 15px;
+  
+}
+.animenu a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.animenu__nav {
+  background-color:;
+}
+.animenu__nav > li {
+  position: relative;
+  border-right: 1px solid ;
+}
+.animenu__nav > li > a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+.animenu__nav > li > a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  border: 4px solid transparent;
+  border-bottom: 0;
+  border-top-color: currentColor;
+  top: 50%;
+  margin-top: -2px;
+  right: 10px;
+}
+.animenu__nav > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+.animenu__nav > li:hover > a {
+  color: #fff;
+}
+
+.animenu__nav__child {
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  margin: 20px 0 0 0;
+  background-color: #373737;
+  transition: margin .15s, opacity .15s;
+}
+.animenu__nav__child > li {
+  width: 100%;
+  border-bottom: 1px solid #515151;
+}
+.animenu__nav__child > li:first-child > a:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 1em;
+  top: -6px;
+  border: 6px solid transparent;
+  border-top: 0;
+  border-bottom-color: inherit;
+}
+.animenu__nav__child > li:last-child {
+  border: 0;
+}
+.animenu__nav__child a {
+  padding: 10px;
+  width: 100%;
+  border-color: #373737;
+}
+.animenu__nav__child a:hover {
+  background-color: #0186ba;
+  border-color: #0186ba;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .animenu__toggle {
+    display: inline-block;
+  }
+
+  .animenu__nav,
+  .animenu__nav__child {
+    display: none;
+  }
+
+  .animenu__nav {
+    margin: 20px 0;
+  }
+  .animenu__nav > li {
+    width: ;
+    border-right: 0;
+    border-bottom: 1px solid #515151;
+  }
+  .animenu__nav > li:last-child {
+    border: 0;
+  }
+  .animenu__nav > li:first-child > a:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 1em;
+    top: -6px;
+    border: 6px solid transparent;
+    border-top: 0;
+    border-bottom-color: inherit;
+  }
+  .animenu__nav > li > a {
+    width: 100%;
+    padding: 10px;
+    border-color: #111;
+    position: relative;
+  }
+  .animenu__nav a:hover {
+    background-color: #0186ba;
+    border-color: #0186ba;
+    color: #fff;
+  }
+
+  .animenu__nav__child {
+    position: static;
+    background-color: #373737;
+    margin: 0;
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .animenu__nav__child > li:first-child > a:after {
+    content: none;
+  }
+  .animenu__nav__child a {
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+.animenu__nav--open {
+  display: block !important;
+}
+.animenu__nav--open .animenu__nav__child {
+  display: block;
+}
+.log1{
+color:black;
+}
+.ablog
+{
+	background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+	}
+	.about1{
+	background-color:white;
+
+    height: 80px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	.parallax1{
+	background-image:url("images/bg1.jpg");
+
+    height:auto; 
+	width:auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+		.body {
+    background-image:url("images/.jpg");
+
+    height:auto; 
+	width:100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	line-height: 24px;
+    font-size: 16px;
+    color: #818181;
+}
+
+</style>
+
+    </head>
+	
+    <body class="about">
+
+	
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header parallax1">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					
+						<div class=" wow animated bounceInRight"><img src="images/logo.jpg" class="img-responsive" style="height:59px; width:250px;  "></div>
+                    
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="animenu"> 
+  <button class="animenu__toggle">
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+    <span class="animenu__toggle__bar"></span>
+  </button>
+  <ul class="animenu__nav">
+    <li>
+     <a href="index.html">Home</a>
+    </li>
+	<li class="active">
+      <a href="about-us.html">About</a>
+    </li>
+    <li>
+      <a href="#service">Service</a>
+      <ul class="animenu__nav__child">
+        <li><a href="aerobics.html">Aerobics</a></li>
+        <li><a href="muscle.html">Muscle</a></li>
+        <li><a href="yoga.html">Yoga</a></li>
+		<li><a href="aBS.html">Abdominal Exercise</a></li>
+        <li><a href="cardio.html"> Cardio </a></li>
+        <li><a href="Kung fu.html">Kung Fu</a></li>
+        <li><a href="Martial Arts .html">Martial Arts</a></li>
+
+	  </ul>
+    </li>     
+    <li>
+      <a href="pricing.html#pricing">Pricing</a>
+    </li>
+    <li>
+      <a href="gallery.html#gallery">Gallery</a>
+    </li>
+    <li>
+      <a href="Contact-Us.html">Contact</a>
+    </li>                 
+  </ul>
+</nav>
+    <!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<!-- Service section -->
+		<section>
+			<div class="container">
+				<div class="row ">
+				
+					<div>
+
+			<h2 class=" wow animated bounceInLeft">Mission Statement from its values</h2>	
+	<p>"Our Company's foundation is built on our Values, which distinguish us and guide our actions. We conduct our business in a socially responsible and ethical manner. We respect the law, protect the environment, and benefit the communities where we work."</p>
+				
+					</div>
+			
+					<div class="col-sm-12 col-sm-12 col-sm-12 ">
+
+							</div>
+							<h3 class=" wow animated bounceInRight"><i>Welcome To </i><b>Trim</b> <i>Gym</i></h3>
+							<p class="wow animated fadeInDown ">The establishment of Trim-Gym in the early 90s was inspired by the notable lack of fitness facilities coupled with the lack of the required equipment, not to mention qualified instructors, in the few facilities that already existed in the country. Over the years, we have grown substantially to become one of the leading brands in the health and fitness industry in Pakistan. The remarkable growth, success and customer affiliation we are enjoying today can be attributed directly to our CEO’s vision for the brand. It has also been brought to life by the hard work and dedication of our team of exercise enthusiasts. Not only are we one of the largest chains of health and fitness clubs in the country today, we also offer quality services to empower our clients and enhance active lifestyles.
+
+While fitness is considered to be one of the largest sports across the world, you need to be healthy for you to achieve a decent level of fitness. Rekindled interest in health and fitness among residents has focused the spotlight on the various health and fitness clubs in the country. In this regard, we not only filled the business gap that existed in the industry, but we have also been able to surpass the expectations of our clients. We have done this by offering exceptional services, professional assistance by qualified and knowledgeable trainers, and giving our clients access to state-of-the art equipment. Regardless of our achievements, we have not relented in our commitment to ensure that our members get nothing but the best of everything the health and fitness industry has to offer modern exercise enthusiasts.
+							</p><br/>
+								<h3 class=" wow animated bounceInRight">Why Trim?</h3><br/>
+								<p class="wow animated fadeInDown">Contrary to the popular image, <b>Trim</b> is not designed for the upper bourgeois or the elite class. Our mantra is “fitness for all” and we make sure that we welcome anyone who want to achieve their fitness goal and remain healthy.
+
+We believe exercising should not be cumbersome. It should be something every one of us ought to look forward to. To spice up the daily dreary fitness regime. <b>Trim</b> is specifically designed to keep up with the modern needs of its customers.
+
+Because of the reason, we are the only health club in Pakistan to develop and establish an in-house Instructor certification program that helps in training fitness instructors through a variety of subject such as CPR, Human Anatomy, Physiology, Kinesiology, Functional training and Fitness testing to name a few.
+
+The end result: a league of extraordinarily personalized instructors who help others with their lifelong dream of attaining fitness and health across the country.
+
+Still confused about whether <b>Trim</b> and You are the right fit? Don’t be. Take the simple initiative of visiting any <b>Trim</b> Club near you and get in touch with one of our personal to talk about your needs. We will help you chalk up a personalized program to help you shed those extra pounds. Put healthy back in your eating habits and most of all – groom your mindset to make you a positive person.
+
+Our doors are open for anyone who wants to change their lifestyle. Get in shape with <b>Trim</b> today.</p><br/>
+					</div>
+										<div class="row">
+				
+					
+					<div class="col-sm-12 col-sm-12 col-sm-12 ">
+
+							
+							
+							
+							<h1 class="media-heading text-center">OUR PHILOSOPHY</h1>
+							
+                        <p>Our philosophy is simple; we provide upscale personalized fitness and performance training facilities. Designed to integrate the best of traditional fitness with the latest functional and performance training methods that can be scaled for the beginner to the most advanced. We listen and understand our clients&#39; needs for a clean, convenient, and comfortable facility while demanding more results in less time.<br />
+<br />
+Our services are designed to offer individualized attention and time efficient programming with fitness professionals to help ensure results and keep you motivated. Our trainers focus on delivering effective training methods while educating clients on proper nutritional habits. We have several dedicated areas of our facility designed for specialized small group training with a Fitness professional.<br />
+<br />
+These areas include a space for:</p>
+
+<ul>
+	<li>Core &amp; flexibility</li>
+	<li>Functional strength training (RIP-60, Kettlebell)</li>
+	<li>Bodyweight training (Calisthenics)</li>
+	<li>Performance enhancement training (RAPIDFIT)</li>
+	<li>Cardiovascular conditioning (Group Exercise classes)</li>
+</ul>
+
+<p>A dedicated Performance Training area with climbing ropes, Olympic lifting platforms, sand bags, tires, sleds, kettlebells, and many more fitness accessories to make performance style of training a new and exciting way to workout for everyone!&quot;<br />
+<br />
+Before starting your workout program, we schedule a meeting to evaluate your strengths and weaknesses, and to develop the most beneficial workout routine to match your specific goals. We combine exercise, nutrition and healthy lifestyle practices so you can improve all aspects of your physical and mental well-being.<br />
+<br />
+Our Training draws on leading-edge research and academic institutions such as American College of Sports Medicine (ACSM), National Academy of Sports Medicine-USA (NASM) and National Strength &amp; Conditioning Association-USA (NSCA) coupled with our seasoned team&rsquo;s experience working with thousands of members in all branches. As new discoveries evolve in the training space, <b>Trim</b> will incorporate these emerging best practices.<br />
+<br />
+The following core values give an overview of what <b>Trim</b> Training philosophy is today:</p>
+
+<ul>
+	<li>Whether you&rsquo;re just beginning your journey into fitness or pushing towards your summit, <b>Trim</b> gives you a scalable, sustainable, fun, effective approach to help you achieve your personal best.</li>
+	<li>At <b>Trim</b>, we use versatile, scalable tools to perform exercises that improve movement on the field or in life.</li>
+</ul>
+
+<p>At <b>Trim</b>, our team of fitness professionals helps you apply the minimum dose of effort to get maximum results using only methods that work.</p>
+
+						</div>
+							</div>
+							</div>							
+							
+				
+		</section>
+		<!-- end Service section -->
+		
+		
+		
+		<!-- Social section -->
+		<section id="social" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>FOLLOW US</h2>
+							<p>Beautifully simple follow buttons to help you get followers on</p>
+						</div>
+						
+						<ul class="social-button">
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+						</ul>
+						<div class="text-center">
+						<br/>
+						<br/>
+            <p>Copyright &copy; 2021 Design and Developed By <a href="#">Abdullah Usmani</a> </p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Social section -->
+		
+		
+		</main>
+		
+		
+
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
